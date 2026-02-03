@@ -1,8 +1,8 @@
 name: pzl130
-description: "A new Flutter project."
+description: "aplikacja dla wąskiego grona do nauki"
 publish_to: 'none'
 
-version: 1.0.0+1
+version: 1.0.1+6
 
 environment:
   sdk: ^3.8.1
@@ -22,7 +22,10 @@ dependencies:
   flutter_pdfview: ^1.3.2
   path_provider: ^2.1.2
   flutter_svg: ^2.0.7
-
+  flame: ^1.10.0
+  shared_preferences: ^2.2.2
+  flutter_secure_storage: ^9.0.0
+  local_auth: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -35,7 +38,24 @@ flutter:
     - assets/aircraft_bg.jpg
     - assets/pinup_girl.png
     - assets/cockpit/cockpit.svg
-  fonts:
-    - family: Pacifico
-      fonts:
-        - asset: assets/fonts/Pacifico-Regular.ttf
+    - assets/images/orlik.png
+    - assets/images/shahed.png
+    - assets/images/bullet.png
+    - assets/images/power_extra_bullet.png
+    - assets/images/power_fast_fire.png
+    - assets/images/power_life.png
+    - assets/images/bryza.png
+
+
+fonts:
+  - family: Orbitron
+    fonts:
+      - asset: assets/fonts/Orbitron-Regular.ttf
+      - asset: assets/fonts/Orbitron-Bold.ttf
+        weight: 700
+
+  - family: RobotoCondensed
+    fonts:
+      - asset: assets/fonts/RobotoCondensed-Regular.ttf
+      - asset: assets/fonts/RobotoCondensed-Bold.ttf
+        weight: 700

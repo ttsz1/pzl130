@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.pzl130">
+    package="com.ttsz.pzl130">
 
     <!-- Dodaj to, aby aplikacja miała dostęp do sieci: -->
     <uses-permission android:name="android.permission.INTERNET"/>

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import '../screens/quiz_category_screen.dart';
-import '../screens/admin_mode_screen.dart';
-import '../screens/learning_mode_screen.dart';
-import '../screens/my_results_screen.dart';
-import '../screens/test_mode_screen.dart';
-import '../screens/emergency_story_screen.dart';
-import '../screens/utilities_screen.dart';
-import '../screens/scenario_selection_screen.dart';
-import '../screens/cabin_screen.dart'; // <-- NOWA ZAKŁADKA
+import '../../screens/quiz_category_screen.dart';
+import '../../screens/admin_mode_screen.dart';
+import '../../screens/learning_mode_screen.dart';
+import '../../screens/my_results_screen.dart';
+import '../../screens/test_mode_screen.dart';
+import '../../screens/emergency_story_screen.dart';
+import '../../screens/utilities_screen.dart';
+import '../../screens/scenario_selection_screen.dart';
+import '../../screens/cabin_screen.dart'; // <-- NOWA ZAKŁADKA
 
 class UserHomeScreen extends StatelessWidget {
   final String firstName;

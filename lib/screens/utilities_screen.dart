@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'timecalk_screen.dart';
-import 'metar_screen.dart';    // ★ import nowego ekranu
+import 'metar_screen.dart';
+import 'orlik_game_screen.dart';
+import '../match3_screen.dart'; // ★ dodaj import
 
 class UtilitiesScreen extends StatelessWidget {
   const UtilitiesScreen({super.key});
@@ -26,6 +28,23 @@ class UtilitiesScreen extends StatelessWidget {
         color: Colors.lightBlue,
         onTap: () => _goTo(context, const MetarScreen()),
       ),
+
+      // ★★★ NOWY ELEMENT LISTY — TRYB ZBIERZ 3 ★★★
+      _UtilityItem(
+        title: 'Tryb: ZBIERZ 3',
+        description: 'Nowa gra logiczna — zbierz śmigła!',
+        icon: Icons.grid_3x3,
+        color: Colors.green,
+        onTap: () => _goTo(context, const Match3Screen()),
+      ),
+
+      _UtilityItem(
+        title: 'orlik vs sahed',
+        description: 'trochę rozrywki',
+        icon: Icons.airplanemode_active,
+        color: Colors.orange,
+        onTap: () => _goTo(context, const OrlikGameScreen(userId: '1')),
+      ),
     ];
 
     return Scaffold(
@@ -38,13 +57,18 @@ class UtilitiesScreen extends StatelessWidget {
           final it = items[i];
           return Card(
             elevation: 4,
-            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12),
+            ),
             child: ListTile(
               leading: CircleAvatar(
                 backgroundColor: it.color.withOpacity(0.2),
                 child: Icon(it.icon, color: it.color),
               ),
-              title: Text(it.title, style: const TextStyle(fontWeight: FontWeight.bold)),
+              title: Text(
+                it.title,
+                style: const TextStyle(fontWeight: FontWeight.bold),
+              ),
               subtitle: Text(it.description),
               trailing: const Icon(Icons.arrow_forward_ios),
               onTap: it.onTap,

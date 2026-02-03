@@ -124,7 +124,7 @@ class _EmergencyStoryScreenState extends State<EmergencyStoryScreen> {
 
             // Obsługa kroków zakończenia
             if (currentStep == 666) {
-              return _buildEndScreen(widget.finalFailureText ?? 'Nieudane zakończenie');
+              return _buildEndScreen(widget.finalFailureText ?? 'NIEPOWODZENIE! Zniszczyłeś samolot');
             }
             if (currentStep == 777) {
               return _buildEndScreen(widget.finalSuccessText ?? 'Udało się!');
